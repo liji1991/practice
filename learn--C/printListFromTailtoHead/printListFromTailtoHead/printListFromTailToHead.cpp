@@ -10,6 +10,11 @@ struct NodeList{
 
 int printListFromTailToHead(NodeList* head) {
 	int ret = 0;
+	if (head == NULL) {
+		ret = -1;
+		std::cout << "error: head == NULL" << std::endl;
+		return ret;
+	}
 	std::vector<int> tmpv;
 	std::stack<int> tmpStack;
 	NodeList* tmphead = head;
@@ -31,6 +36,7 @@ int printListFromTailToHead(NodeList* head) {
 
 int main() 
 {	//NodeList: 1-->2-->3;
+	int ret = 0;
 	NodeList* phead;
 	NodeList node1(1);
 	phead = &node1;
@@ -46,7 +52,13 @@ int main()
 		pnode = pnode->next;
 	}
 	std::cout << "TailToHead NodeList:\n" << std::endl;
-	printListFromTailToHead(phead);
+
+	ret = printListFromTailToHead(phead);
+
+	if (ret != 0) {
+		std::cout << "fuc printListFromTailToHead is error." << std::endl;
+		return ret;
+	}
 
 	return 0;
 }

@@ -1,2 +1,2 @@
 ﻿  printListFromTailToHead.cpp
-  printListFromTailtoHead.vcxproj -> D:\study\learngit\learn--C\printListFromTailtoHead\Debug\printListFromTailtoHead.exe
+d:\study\learngit\learn--c\printlistfromtailtohead\printlistfromtailtohead\printlistfromtailtohead.cpp(15): error C2563: 在形参表中不匹配
