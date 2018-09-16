@@ -99,6 +99,7 @@ int main()
 	for (i = 0;i < len3;i++) {
 		printf("%s\n", p3[i]);
 	}
+	sortFree02(&p3, len3);
 
 	system("pause");
 
